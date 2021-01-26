@@ -1,0 +1,100 @@
+*{
+	padding: 0px;
+	margin: 0 0;
+}
+
+body, html{
+	margin-top: -15px;
+	width: 100%;
+	height: 100%;
+}
+
+.principal{
+
+	width: 100%;
+	background-color: gray;
+}
+
+.contStart{
+	width: 100%;
+	text-align: center;
+}
+
+.startButton{
+	background-color: #4CAF50; 
+	border: none;
+	color: white;
+	padding: 30px 64px;
+	text-align: center;
+	display: absolute;
+	font-size: 32px;
+	margin-top: 5%;
+	user-select: none;
+}
+
+.dinossauro{
+	width: 60px;
+	height: 60px;
+	background-image: url(../img/dino.png);
+	background-repeat: no-repeat;
+	position: absolute;
+	bottom: 0;
+}
+
+.cactus{
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	bottom: 0;
+	background-image: url(../img/cactus.png);
+}
+
+.game-over{
+	text-align: center;
+	color: #66666;
+	margin-top: 50px;
+	font-family: arial;
+}
+
+
+@keyframes slideright{
+	from{
+		background-position: 70000%;
+		}to{
+			background-position: 0;
+		}
+	}
+
+	.background-screen {
+		position: absolute;
+		bottom: 0;
+		background-image: url(../img/background.png);
+		background-repeat: repeat-x;
+		animation: slideright 600s infinite linear;
+		width: 100%;
+		height: 200px;
+	}
+
+
+	.score{
+		font-family: arial;
+		padding-left: 80%;
+	}
+
+
+
+	.autor{
+		width: 100%;
+		text-align: center;
+		display: infinite;
+	}
+
+	.autor span{ 
+		font-size:100px;
+		opacity: 30%;
+		user-select: none;
+	}
+
+
+
+
